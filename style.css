@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
+
+:root {
+  --primaryColor: #c5c1ac;
+}
+
+body {
+  background-color: var(--primaryColor);
+  overflow: hidden;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.wrapper {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 50%;
+}
+
+.profile-pic {
+  border-radius: 5px;
+  width: 80%;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.titles {
+  width: 80%;
+}
+
+.social-media {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.social-media button {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.linkedin-btn {
+  margin-right: 5px;
+}
+.github-btn {
+  margin-right: 5px;
+}
+
+.info {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.contact {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+}
