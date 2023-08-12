@@ -57,7 +57,7 @@ li {
   align-items: center;
   align-self: center;
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   width: 100%;
 }
@@ -65,7 +65,8 @@ li {
 .content-wrapper {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 100%;
+  margin-top: 13rem;
 }
 
 .main-content {
@@ -243,6 +244,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
   .main-content {
     width: 100%;

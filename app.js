@@ -2,7 +2,7 @@
  * The function `downloadPDF` creates a link element with attributes for downloading a PDF file.
  */
 function downloadPDF() {
-  var link = document.createElement("a");
+  let link = document.createElement("a");
   link.setAttribute("download", "Oscar-Lopez-CV.pdf");
   link.setAttribute("href", "media/files/Oscar-Lopez-CV.pdf");
   link.click();
@@ -10,7 +10,7 @@ function downloadPDF() {
 
 /* The code snippet defines a constructor function called `TxtType`. This function takes three
 parameters: `el`, `toRotate`, and `period`. */
-var TxtType = function (el, toRotate, period) {
+let TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -22,8 +22,8 @@ var TxtType = function (el, toRotate, period) {
 
 /* The `TxtType.prototype.tick` function is responsible for animating the text typing effect. */
 TxtType.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+  let i = this.loopNum % this.toRotate.length;
+  let fullTxt = this.toRotate[i];
 
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -33,8 +33,8 @@ TxtType.prototype.tick = function () {
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
-  var that = this;
-  var delta = 100 - Math.random() * 100;
+  let that = this;
+  let delta = 100 - Math.random() * 100;
 
   if (this.isDeleting) {
     delta /= 2;
@@ -58,16 +58,16 @@ TxtType.prototype.tick = function () {
 loading all its content. In this specific code snippet, the `window.onload` function is used to
 initialize a text typing effect on elements with the class "typewrite". */
 window.onload = function () {
-  var elements = document.getElementsByClassName("typewrite");
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-type");
-    var period = elements[i].getAttribute("data-period");
+  let elements = document.getElementsByClassName("typewrite");
+  for (let i = 0; i < elements.length; i++) {
+    let toRotate = elements[i].getAttribute("data-type");
+    let period = elements[i].getAttribute("data-period");
     if (toRotate) {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
   // INJECT CSS
-  var css = document.createElement("style");
+  let css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML =
     ".typewrite > .wrap { border-right: 1rem solid #fff; color: #fdfcdc; font-style: italic;}";
