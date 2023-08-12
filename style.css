@@ -2,11 +2,13 @@
 
 :root {
   --primaryColor: #c5c1ac;
+  --secondaryColor: #bc6c25;
+  --highlightColor: #ff9f31;
 }
 
 body {
   background-color: var(--primaryColor);
-  overflow: hidden;
+  overflow: unset;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -17,6 +19,38 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-weight: bold;
+  transition: all ease-in-out 0.6s;
+}
+
+a:hover {
+  color: var(--highlightColor);
+}
+
+button {
+  cursor: pointer;
+  transition: all ease-in-out 0.6s;
+}
+
+button:hover {
+  color: var(--secondaryColor);
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style-type: circle;
 }
 
 .wrapper {
@@ -31,25 +65,53 @@ h6 {
 .content-wrapper {
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 95%;
 }
 
 .main-content {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   justify-content: center;
   margin-right: 1rem;
   padding: 1rem;
-  width: 50%;
+  width: 40%;
 }
 
 .profile-pic {
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.profile-pic-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 20px;
   width: 80%;
 }
 
+.profile-pic-wrapper img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.titles {
+  margin-bottom: 2rem;
+}
+
 .title {
+  font-size: 1.3rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.and-text{
   margin-bottom: 1rem;
 }
 
@@ -61,8 +123,13 @@ h6 {
   width: 50%;
 }
 
+.content div {
+  font-size: 0.7rem;
+}
+
 .titles {
   width: 80%;
+  align-self: center;
 }
 
 .social-media {
@@ -71,31 +138,180 @@ h6 {
   margin-bottom: 1rem;
 }
 
+.social-media p {
+  align-self: center;
+  margin-right: 1rem;
+}
+
+.social-mobile {
+  display: none;
+}
+
 .social-media button {
   border: none;
   padding: 1rem;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .linkedin-btn {
   margin-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .github-btn {
   margin-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.download-btn {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .info {
-  background-color: #fff;
+  background-color: white;
   border-radius: 5px;
   padding: 1rem;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about h5 {
+  margin-bottom: 0.5rem;
+}
+
+.education h5 {
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  margin-top: 0.5rem;
+}
+
+.certifications {
+  margin-top: 0.5rem;
+}
+
+.certifications-list li {
+  margin: 0.5rem 0;
+}
+
+.projects ul li {
+  margin-top: 1rem;
 }
 
 .contact {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 1rem;
+}
+
+/* Tablet Size Style */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    width: 100%;
+  }
+  .main-content {
+    width: 20%;
+  }
+
+  .content {
+    width: 70%;
+  }
+
+  .profile-pic-wrapper {
+    width: 100%;
+  }
+}
+
+/* Mobile Size Style */
+@media (max-width: 700px) {
+  h5 {
+    font-size: 2rem;
+  }
+  .wrapper {
+    height: auto;
+    width: 98%;
+    align-self: center;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 3rem 0 3rem 0;
+  }
+
+  .titles {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+  .content div {
+    font-size: 0.4rem;
+  }
+
+  .profile-pic-wrapper {
+    width: 90%;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+  .social-media a {
+    margin: 0.2rem 0;
+  }
+  .social-media a i {
+    font-size: 2rem;
+  }
+
+  .social-desk {
+    display: none;
+  }
+  .social-mobile {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .info div p {
+    font-size: 1rem;
+  }
+
+  .info div ul li {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact div {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.2rem 0;
+  }
 }

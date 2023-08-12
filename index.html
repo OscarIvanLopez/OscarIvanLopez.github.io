@@ -11,10 +11,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link
@@ -34,49 +30,65 @@
       <div class="content-wrapper">
         <!-- Main Content -->
         <div class="main-content">
-          <div
-            class="titles animate__animated animate__slideInLeft animate__faster"
-          >
-            <h1 class="name">oscar ivan lopez valenzuela</h1>
-            <h2 class="title">software engineer</h2>
+          <div class="titles">
+            <h1 class="name">hi! i'm oscar lopez.</h1>
+            <h5 class="and-text">and i'm a:</h5>
+            <a
+              class="typewrite title"
+              data-period="2000"
+              data-type='[ "software engineer.", "software development engineer in test.", "QA automation engineer.", "backend developer.", "frontend developer.", "mobile developer.", "pragmatic developer." ]'
+            >
+              <span class="wrap"></span>
+            </a>
           </div>
-          <img
-            class="profile-pic animate__animated animate__slideInLeft animate__fast"
-            src="./media/img/profile.jpg"
-            alt="profile pic"
-          />
+          <div class="profile-pic-wrapper">
+            <img
+              class="profile-pic"
+              src="./media/img/profile.jpg"
+              alt="profile pic"
+            />
+          </div>
         </div>
         <!-- Main Content end -->
 
         <!-- Content -->
         <div class="content">
           <!-- Social media -->
-          <div
-            class="social-media animate__animated animate__slideInRight animate__fast"
-          >
-            <button class="linkedin-btn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </button>
-            <button class="github-btn">
-              <i class="fa-brands fa-github"></i>
-            </button>
-            <button class="download-btn">download my cv</button>
+          <div class="social-media">
+            <p class="social-desk">you can find me here (｡･∀･)ﾉ</p>
+            <p class="social-mobile">you can find me here down /(´･ω･`)</p>
+            <a
+              href="https://www.linkedin.com/in/oscar-ivan-lopez-valenzuela-733510179/"
+              target="_blank"
+            >
+              <button class="linkedin-btn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </button>
+            </a>
+            <a href="https://github.com/OscarIvanLopez" target="_blank">
+              <button class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </a>
+            <a download="/media/files/Oscar-Lopez-CV.pdf">
+              <button onclick="downloadPDF()" class="download-btn">
+                download my cv
+              </button>
+            </a>
           </div>
           <!-- Social media end -->
 
           <!-- Info -->
-          <div
-            class="info animate__animated animate__slideInRight animate__faster"
-          >
+          <div class="info">
             <div class="about">
               <h5>about me</h5>
               <p>
                 Pragmatic mid software engineer with over 3 years of experience
-                in the tech industryª I am passionate about technology and the
-                open-source movementª I have hands-on experience as a web and
+                in the tech industry. I am passionate about technology and the
+                open-source movement. I have hands-on experience as a web and
                 test developer using React and Python, as well as a mobile
-                developer using Flutterª My positive attitude and excellent
-                communication skills are standout qualitiesª Programming, for
+                developer using Flutter. My positive attitude and excellent
+                communication skills are standout qualities. Programming, for
                 me, is not just a job, but a hobby that I am deeply passionate
                 about.
               </p>
@@ -99,33 +111,113 @@
             </div>
             <div class="certifications">
               <h5>certifications</h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Expedita, assumenda!
-              </p>
+              <ul class="certifications-list">
+                <li>
+                  Cypress: Automatización de pruebas de punta a punta
+                  <p>Stack: Javascript, Cypress, Jenkins.</p>
+                  <p>
+                    <a
+                      href="https://www.udemy.com/course/cypress-automatizacion-de-pruebas-de-punta-a-punta/"
+                      target="_blank"
+                      >[Course link]</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  React - La Guía Completa: Hooks Context Redux MERN.
+
+                  <p>
+                    Stack: Javascript, Typescript, Redux, Gatsby, Nextjs,
+                    Mongodb, Express, Nodejs, Styled Components.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/"
+                      target="_blank"
+                      >[Course link]</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  React: de cero a experto.
+
+                  <p>
+                    Stack: Javascript, Typescript, React, Mongo, Express,
+                    Nodejs, JWT.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.udemy.com/course/react-cero-experto/"
+                      target="_blank"
+                      target="_blank"
+                      >[Course link]</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  React PRO: Lleva tus bases al siguiente nivel.
+
+                  <p>
+                    Stack: Javascript, Typescript, Formik, React, Storybook,
+                    TSDX.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.udemy.com/course/react-pro/"
+                      target="_blank"
+                      >[Course link]</a
+                    >
+                  </p>
+                </li>
+              </ul>
             </div>
             <div class="projects">
               <h5>projects</h5>
               <ul>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, labore!
+                  <strong> IIESS Nursing School's web page. </strong>
+                  <p>
+                    <a target="_blank" href="https://demo.iiess.edu.mx/"
+                      >Demo Link</a
+                    >
+                  </p>
+                  <p>Stack: Wrodpress, PHP, Tailwind css.</p>
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, labore!
+                  <strong> Molino Business Admin. </strong>
+                  <p>
+                    Stack: React, Redux, Nodejs(Express), Tailwind css, AWS.
+                  </p>
                 </li>
+
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, labore!
+                  <strong>
+                    QA Automation Testing Scripts Writing for a several Car
+                    Forums.
+                  </strong>
+                  <p>Stack: Python, RobotFramework, Jenkins</p>
+                  <a
+                    target="_blank"
+                    href="https://www.corvetteforum.com/forums/"
+                    >Corvette Forum,</a
+                  >
+                  <a target="_blank" href="https://www.hdforums.com/forum/"
+                    >Harley Davidson Forums,</a
+                  >
+                  <a target="_blank" href="https://www.civicforums.com/forums/"
+                    >Honda Civic Forums.</a
+                  >
                 </li>
+
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, labore!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, labore!
+                  <strong> Ecommers Web & Mobile App. </strong>
+
+                  <p>
+                    Stack: Python(Django & Django Rest Framework) & Flutter.
+                  </p>
+
+                  <a href=""></a>
                 </li>
               </ul>
             </div>
@@ -133,12 +225,10 @@
           <!-- Info end -->
 
           <!-- contact -->
-          <div
-            class="contact animate__animated animate__slideInRight animate__faster"
-          >
+          <div class="contact">
             <div class="location">
               <i class="fa-solid fa-location-dot"></i>
-              <span>Guaymas, Sonora, Mexico.</span>
+              <span>guaymas, sonora, mexico.</span>
             </div>
             <div class="email">
               <i class="fa-solid fa-envelope"></i>
@@ -155,5 +245,6 @@
       </div>
       <!-- Content Wrapper end -->
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
