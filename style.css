@@ -111,7 +111,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.and-text{
+.and-text {
   margin-bottom: 1rem;
 }
 
@@ -278,9 +278,18 @@ li {
   }
   .social-media a {
     margin: 0.2rem 0;
+    width: 100%;
   }
+  .social-media a button {
+    width: 100%;
+  }
+
   .social-media a i {
     font-size: 2rem;
+  }
+
+  .social-media p {
+    margin: 0 0 1rem 0;
   }
 
   .social-desk {
@@ -289,7 +298,7 @@ li {
   .social-mobile {
     display: block;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   .info div p {
